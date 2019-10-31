@@ -1,0 +1,15 @@
+opam-version: "2.0"
+maintainer: "Ta-Chu Kao<tck29@cam.ac.uk>"
+authors: [ "Ta-Chu Kao and Guillaume Hennequin" ]
+license: "MIT"
+
+build: [
+  [ "dune" "subst" ] {pinned}
+  [ "dune" "build" "-p" name "-j" jobs ]
+]
+
+depends: [
+  "ocaml" {>= "4.08.0"}
+  "owl-top" 
+  "owl-ode" 
+]

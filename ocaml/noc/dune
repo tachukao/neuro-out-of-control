@@ -1,0 +1,4 @@
+(library
+ (name noc)
+ (public_name noc)
+ (libraries owl owl-ode))
